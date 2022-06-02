@@ -1,0 +1,48 @@
+.cache {
+    display: none;
+    margin-left: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.red {
+    /*background: red;*/
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+    border-radius: 5px;
+}
+
+#famille li {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;    
+}
+
+#famille li {
+    border: 1px solid #ccc;
+    padding: 5px 2px;
+    text-decoration: none;
+    color: #666;   
+    font-family: 'Segoe Script';
+    font-size: 10px;
+    display: inline-block;
+
+    border-radius: 5px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/*
+#famille ul {
+    margin-left: 5px;
+}*/
+
+#famille div {
+    width: 170px;
+    text-align: center;
+}
