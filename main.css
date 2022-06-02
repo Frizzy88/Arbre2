@@ -1,0 +1,652 @@
+@media screen and (min-width: 576px) {
+  /* Définition des polices personnalisées */
+
+  @font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+      url('polices/ballpark.woff') format('woff'),
+      url('polices/ballpark.ttf') format('truetype'),
+      url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+      url('polices/dayrom.woff') format('woff'),
+      url('polices/dayrom.ttf') format('truetype'),
+      url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Eléments principaux de la page */
+
+  body {
+    /*background: url('images/fond_jaune.png');*/
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+  }
+
+  #bloc_page {
+    width: auto;
+    margin: auto;
+  }
+
+  section h1,
+  footer h1,
+  nav a {
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  /* Header */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .normal {
+    float: right;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 65px;
+  }
+
+  .titre_principal {
+    float: right;
+    text-align: center;
+  }
+
+  #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  img,
+  table,
+  td,
+  blockquote,
+  code,
+  pre,
+  textarea,
+  input,
+  iframe,
+  object,
+  embed,
+  video {
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+  }
+
+  header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+  }
+
+  hr {
+    display: inline-block;
+    width: 95%;
+    margin-left: 15px;
+  }
+
+  /* Corps */
+
+  section {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .arbre_genealogique {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  article {
+    text-align: justify;
+    margin-right: 75px;
+    margin-left: 20px;
+    flex: 3;
+  }
+
+  .start_article {
+    display: block;
+    text-align: center;
+  }
+
+  .ico_arbre {
+    /*vertical-align: middle;*/
+    text-align: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .start_article h1 {
+    text-align: center;
+    font-size: medium;
+  }
+
+  article p {
+    font-size: 0.8em;
+  }
+
+  article #container {
+    text-align: center;
+  }
+
+  .ind_pat {
+    text-align: center;
+    /*margin: 0 auto;*/
+    width: 100%;
+  }
+
+  /* Menu debut */
+  .menu {
+    display: inline-block;
+  }
+
+  #menu-accordeon {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    width: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+  }
+
+  #menu-accordeon ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  #menu-accordeon li {
+    background-color: #ffffff;
+    margin-bottom: 2px;
+    text-align: left;
+  }
+
+  #menu-accordeon li li {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    border-radius: 0;
+    background: white;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+  }
+
+  #menu-accordeon a {
+    display: block;
+    text-decoration: none;
+    color: #181818;
+    padding: 8px 0;
+    padding-bottom: 3px;
+    font-family: 'Brush Script MT';
+    font-size: 1.2em;
+  }
+
+  #menu-accordeon ul li a,
+  #menu-accordeon li:hover li a {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #menu-accordeon a:hover {
+    text-align: center;
+    color: #760001;
+    border-bottom: solid #760001;
+  }
+
+  #menu-accordeon li:hover {
+    /*background: #729EBF;*/
+    background: #ffffff;
+  }
+
+  #menu-accordeon li li:hover {
+    background: rgb(255, 255, 246);
+  }
+
+  #menu-accordeon ul li:last-child {
+    border-radius: 0 0 6px 6px;
+    border: none;
+  }
+
+  #menu-accordeon li:hover li {
+    max-height: 15em;
+  }
+  /* Menu fin*/
+
+  /* bloc patronymes debut */
+  .container {
+    display: grid;
+    align-items: start;
+    column-gap: 20px;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template-columns: 300px 300px 300px;
+    padding: 10px;
+  }
+  
+  .box1 {
+    margin-bottom: 5px;
+  }
+
+  .box2 {
+    margin-bottom: 5px;
+  }
+
+  .box3 {
+    margin-bottom: 5px;
+  }
+
+  .box4 {
+    margin-bottom: 5px;
+  }
+
+  .box5 {
+    margin-bottom: 5px;
+  }
+
+  .box6 {
+    margin-bottom: 5px;
+  }
+
+  .box7 {
+    margin-bottom: 5px;
+  }
+
+  .box8 {
+    margin-bottom: 5px;
+  }
+
+  .box9 {
+    margin-bottom: 5px;
+  }
+
+  .box10 {
+    margin-bottom: 5px;
+  }
+
+  .box11 {
+    margin-bottom: 5px;
+  }
+
+  .box12 {
+    margin-bottom: 5px;
+  }
+
+  .box13 {
+    margin-bottom: 5px;
+  }
+
+  .box14 {
+    margin-bottom: 5px;
+  }
+
+  .box15 {
+    margin-bottom: 5px;
+  }
+
+  .box16 {
+    margin-bottom: 5px;
+  }
+
+  .box17 {
+    margin-bottom: 5px;
+  }
+
+  .box18 {
+    margin-bottom: 5px;
+  }
+
+  .box19 {
+    margin-bottom: 5px;
+  }
+
+  .box20 {
+    margin-bottom: 5px;
+  }
+
+  .box21 {
+    margin-bottom: 5px;
+  }
+
+  .box22 {
+    margin-bottom: 5px;
+  }
+
+  .box23 {
+    margin-bottom: 5px;
+  }
+
+  .box24 {
+    margin-bottom: 5px;
+  }
+
+  .accordion {
+    background-color: rgb(188, 251, 235);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    /*margin-left: 25%;*/
+  }
+
+  .accordion:after {
+    /*content: '\002B';*/
+    content: "";
+    display: table;
+    clear: both;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Segoe Script';
+    font-size: 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    list-style-type: none;
+  }
+
+  .panel a {
+    display: block;
+    text-decoration: none;
+    color: #181818;
+    padding: 8px 0;
+    padding-bottom: 3px;
+  }
+
+  .panel li a {
+    display: inline;
+    text-decoration: none;
+  }
+  /* bloc patronymes fin */
+
+  /* Rechercher debut */
+  #searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #PersonList{
+  font-family: 'Segoe Script';
+  font-size: 15px;
+  margin-left: 90px;
+  list-style-type: none;
+  text-decoration: none;
+  color: #181818;
+  }
+
+.personne{
+  display: none;    
+ }
+ .personne a {
+  /*display: block;*/
+  text-decoration: none;
+  color: #181818;
+  padding: 8px 0;
+  padding-bottom: 3px;
+}
+
+.personne li a {
+  display: inline;
+  text-decoration: none;
+}
+  /* Rechercher fin*/
+
+  .arbre_asc_desc {
+    display: inline-block;
+    vertical-align: middle;
+    /*width: 60%;*/
+    text-align: center;
+  }
+
+  /*arbre généalogique début*/
+  .contour {
+    text-align: center;
+    vertical-align: baseline;
+    width: 100%;
+    color: rgb(113, 192, 120);
+    /*height: 280px;*/
+  }
+
+  .tree {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+  }
+
+  .tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+
+  .tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 5px 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  /*We will use ::before and ::after to draw the connectors
+  Nous utiliserons ::before et ::after pour dessiner les connecteurs*/
+
+  .tree li::before,
+  .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+  }
+
+  .tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+  }
+
+  /*We need to remove left-right connectors from elements without 
+any siblings*/
+  /*Nous devons supprimer les connecteurs gauche-droite des éléments sans
+tous les frères et sœurs*/
+  .tree li:only-child::after,
+  .tree li:only-child::before {
+    display: none;
+  }
+
+  /*Remove space from the top of single children
+  Supprimer l'espace du haut des enfants célibataires*/
+  .tree li:only-child {
+    padding-top: 0;
+  }
+
+  /*Remove left connector from first child and 
+right connector from last child*/
+  /*Retirez le connecteur gauche du premier enfant et
+connecteur droit du dernier enfant*/
+  .tree li:first-child::before,
+  .tree li:last-child::after {
+    border: 0 none;
+  }
+
+  /*Adding back the vertical connector to the last nodes
+  Rajouter le connecteur vertical aux derniers nœuds*/
+  .tree li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+  }
+
+  .tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+  }
+
+  /*Time to add downward connectors from parents
+  Il est temps d'ajouter des connecteurs descendants des parents*/
+  .tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+  }
+
+  .tree li a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    /*font-family: arial, verdana, tahoma;
+    font-size: 11px;*/
+    display: inline-block;
+    font-family: 'Segoe Script';
+    font-size: 10px;
+
+    border-radius: 5px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  /*Time for some hover effects
+  Il est temps pour certains effets de survol*/
+  /*We will apply the hover effect the the lineage of the element also
+  Nous appliquerons l'effet de survol à la lignée de l'élément également*/
+  .tree li a:hover,
+  .tree li a:hover+ul li a {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+  }
+
+  /*Connector styles on hover
+  Styles de connecteur au survol*/
+  .tree li a:hover+ul li::after,
+  .tree li a:hover+ul li::before,
+  .tree li a:hover+ul::before,
+  .tree li a:hover+ul ul::before {
+    border-color: #94a0b4;
+  }
+
+  /*arbre généalogique fin*/
+
+  /* Fiche individuel debut */
+  .table_name {
+    font-family: cursive;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  tr {
+    border: 1px;
+    border-color: black;
+  }
+
+  #bouton_fermer {
+    margin-right: 30px;
+    background-color: white;
+    border: none;
+  }
+
+  #bouton_fermer img {
+    width: 45px;
+    height: 45px;
+  }
+  /* Fiche individuel fin */
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+  }
+
+  footer p,
+  footer ul {
+    font-size: 0.8em;
+  }
+
+  footer h1 {
+    font-size: 1.1em;
+  }
+}

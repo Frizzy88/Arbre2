@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- En-tête de la page -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="liste.css">
+  <link rel="stylesheet" href="mobile.css">
+
+  <!-- Scrip JS -->
+  <script>
+    const sortList = list => [...list].sort((a, b) => {
+      const A = a.textContent, B = b.textContent;
+      return (A < B) ? -1 : (A > B) ? 1 : 0;
+    });
+
+    window.addEventListener("load", function () {
+      const ul = document.getElementById("PersonList");
+      const list = ul.querySelectorAll("li");
+      ul.append(...sortList(list));
+    })
+
+    function PopupCentrer(page, largeur, hauteur, options) {
+      var top = (screen.height - hauteur) / 2;
+      var left = (screen.width - largeur) / 2;
+      window.open(page, "", "top=" + top + ",left=" + left + ",width=" + largeur + ",height=" + hauteur + "," + options);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Corps de la page -->
+  <ul id="PersonList">
+    <li>
+      <a href="javascript:PopupCentrer('Libog_Li_Libog_Jean_Samuel.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> LIBOG LI LIBOG Jean Samuel </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Libog_Guillaume_Augustin.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> LIBOG Guillaume Augustin </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Marie_Eleonore.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Marie Eléonore </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Ernestine_Celine.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Ernestine Céline </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Aline_Rachele.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Aline Rachèle </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Jeanne_Simone.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Jeanne Simone </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Madeleine_Rose.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Madeleine Rose </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Job_Li_Libog_Jean_Calvin.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> JOB LI LIBOG Jean Calvin </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Mireille_Naemi.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Mireille Naemi</a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Libog_Yvonne_Elisabeth.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> LIBOG Yvonne Elisabeth </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Ngo_Libog_Evelyne_Cecile.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NGO LIBOG Evelyne Cécile </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Libog_Felix_Eboue_Amos.html',1000,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> LIBOG Félix Eboué Amos </a>
+    </li>
+  </ul>
+
+</body>
