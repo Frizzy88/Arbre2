@@ -1,0 +1,80 @@
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    color: #000000;
+    font-family: 'Segoe Script';
+    text-decoration: none;
+}
+
+.arbre_table {    
+    color: rgb(113, 192, 120);
+    text-align: center;
+}
+
+table {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+table.t1 {
+    border: 0px;
+    width: 100%
+}
+
+td.c1 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+td.c2 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 2px groove black;
+    border-left: 0px solid black;
+    border-bottom: 2px groove black;
+
+}
+
+td.c3 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 0px dashed black;
+    border-left: 2px groove black;
+    border-bottom: 2px groove black;
+}
+
+td.c4 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 1px groove black;
+    border-left: 0px solid black;
+    border-bottom: 0px groove black;
+}
+
+td.c5 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 0px dashed black;
+    border-left: 1px groove black;
+    border-bottom: 0px groove black;
+}
+
+td.c6 {
+    border-top: 0px;
+    width: 3%;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px groove black;
+}
+
+td.c7 {
+    vertical-align: bottom;
+    padding-left: 10px;
+    padding-right: 10px;
+}
