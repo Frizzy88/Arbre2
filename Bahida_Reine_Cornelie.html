@@ -2,55 +2,104 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <!-- En-tête de la page -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ma Famille </title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="mobile.css">
+  <!-- En-tête de la page -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ma Famille </title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="mobile.css">
+
+  <!-- SCRIPT JS -->
+  <script>
+    function closeW() {
+      window.close();
+    }
+  </script>
 </head>
 
 <body>
-    <!-- Corps de la page -->
-    <div id="bloc_page">
-        <header>
-            <div id="titre_principal" class="titre_principal">
-                <div id="logo">
-                    <h1>JOB LI BIDJECK</h1>
-                    <img src="JLB.png" alt="Logo de famille" />
-                </div>
-                <h2>Généalogie de la famille</h2>
-            </div>
-        </header>
-        <hr />
-        <section>
-            <div class="ind_pat">
-                <article>
-                    <p>Pour visualiser l'arbre généalogique : <a href="arbre_BahRC.html"> 
-                        <img src="arbre.png" alt="Logo mini arbre"/> </a></p>
-                    <p>Nom: BAHIDA</p>
-                    <p>Prénom: Reine Cornelie </p>
-                    <p>Naissance: 02/09/1986 </p>
-                    <p>Décès: - </p>
-                    <p>Nom du père: BAHIDA, Philippe</p>
-                    <p>Nom de la mère: Ngo BIYONG, Jacqueline</p>
-                    <p>Etat civil: En couple </p>
-                    <p>Conjoint: -</p>
-                    <p>Enfants: 
-                        <br/> Philippe Austin Romuald
-                        <br/> Gaston Armand Privat
-                    </p>
-                </article>
-            </div>            
-        </section>
-        <hr />
-        <footer>
-            <center>
-                Site de présentation de l'Arbre Généalogique de la famille JOB LI BIDJECK
-            </center>
-        </footer>
-    </div>
+  <!-- Corps de la page -->
+  <div id="bloc_page">
+    <header>
+      <div id="titre_principal" class="titre_principal">
+        <div id="logo">
+          <img src="JLB.png" alt="Logo de famille" />
+          <h1>JOB LI BIDJECK</h1>
+        </div>
+        <h2>Fiche individuelle</h2>
+      </div>
+      <button onclick="closeW()" id="bouton_fermer"><img src="btn_close.png" /></button>
+    </header>
+    <hr />
+    <section>
+      <div class="ind_pat">
+        <article>
+          <table border="0" cellpadding="0" cellspacing="0" bgcolor="white" width="100%">
+            <caption>Pour visualiser l'arbre généalogique : <a href="arbre_BahidaReineCornelie.html">
+                <img src="arbre.png" alt="Logo mini arbre" /> </a></caption>
+            <thead>
+              <tr>
+                <th> &nbsp; </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nom: </td>
+                <td> BAHIDA </td>
+              </tr>
+              <tr>
+                <td>Prénom: </td>
+                <td> Reine Cornelie </td>
+              </tr>
+              <tr>
+                <td>Naissance: </td>
+                <td> 02/09/1986 </td>
+              </tr>
+              <tr>
+                <td>Décès: </td>
+                <td> - </td>
+              </tr>
+              <tr>
+                <td>Nom du père: </td>
+                <td> BAHIDA Philippe </td>
+              </tr>
+              <tr>
+                <td>Nom de la mère: </td>
+                <td> NGO BIYONG Jacqueline </td>
+              </tr>
+              <tr>
+                <td>Etat Civil: </td>
+                <td> En couple </td>
+              </tr>
+              <tr class="table_name">
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>Conjoint(s) </td>
+                <td>Enfant(s) </td>
+              </tr>
+              <tr class="table_name">
+                <td> ?? </td>
+                <td> Philippe Austin Romuald </td>
+              </tr>
+              <tr class="table_name">
+                <td> </td>
+                <td> Gaston Armand Privat </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <center>
+        Site de présentation de l'Arbre Généalogique de la famille JOB LI BIDJECK
+      </center>
+    </footer>
+  </div>
 </body>
 
 </html>
