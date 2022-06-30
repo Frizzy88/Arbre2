@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- En-tête de la page -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="liste.css">
+  <link rel="stylesheet" href="mobile.css">
+
+  <!-- Scrip JS -->
+  <script type="text/javascript">
+    const sortList = list => [...list].sort((a, b) => {
+      const A = a.textContent, B = b.textContent;
+      return (A < B) ? -1 : (A > B) ? 1 : 0;
+    });
+
+    window.addEventListener("load", function () {
+      const ul = document.getElementById("PersonList");
+      const list = ul.querySelectorAll("li");
+      ul.append(...sortList(list));
+    })
+
+    function PopupCentrer(page, largeur, hauteur, options) {
+      var top = (screen.height - hauteur) / 2;
+      var left = (screen.width - largeur) / 2;
+      window.open(page, "", "top=" + top + ",left=" + left + ",width=" + largeur + ",height=" + hauteur + "," + options);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Corps de la page -->
+  <ul id="PersonList">
+    <li>
+      <a href="javascript:PopupCentrer('Nyemeck_Pierre.html',950,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NYEMECK Pierre  </a>
+    </li>
+    <li>
+      <a href="javascript:PopupCentrer('Nyemeck_Philippe.html',950,550,'menubar=no,status=no')"> 
+        <img src="arbre.png" alt="Logo mini arbre" /> NYEMECK Philippe  </a>
+    </li>
+  </ul>
+
+</body>
