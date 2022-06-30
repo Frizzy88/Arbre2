@@ -667,6 +667,11 @@
   /*arbre généalogique fin*/
 
   /* Fiche individuel debut */
+  .ProfilPicture {
+    width: 150px;
+    height: 250px;
+  }
+  
   .table_name {
     font-family: cursive;
     font-size: 12px;
