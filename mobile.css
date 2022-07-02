@@ -58,7 +58,7 @@
   .titre_principal_normal {
     display: none;
   }
-  
+
   .btn_normal {
     display: none;
   }
@@ -153,7 +153,7 @@
   /* Corps */
 
   section {
-    display: flex;
+    /* display: flex; */
     margin-bottom: 20px;
     margin-left: 8px;
     margin-right: 8px;
