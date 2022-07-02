@@ -22,14 +22,29 @@
   <!-- Corps de la page -->
   <div id="bloc_page">
     <header>
-      <div id="titre_principal" class="titre_principal">
+      <div id="titre_principal_normal" class="titre_principal_normal">
         <div id="logo">
           <img src="JLB.png" alt="Logo de famille" />
           <h1>JOB LI BIDJECK</h1>
         </div>
         <h2>Fiche individuelle</h2>
       </div>
-      <button onclick="closeW()" id="bouton_fermer"><img src="btn_close.png" /></button>
+      <div class="btn_normal">
+        <button onclick="closeW()" id="bouton_fermer"><img src="btn_close.png" /></button>
+      </div>
+      
+      <div class="mobile">        
+        <nav>
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <a href="index.html" class="logo"> <img src="JLB.png" alt="Logo de famille" /> Fiche individuelle </a>
+            <div id="myLinks">
+              <button onclick="closeW()" id="bouton_fermer"><img src="btn_close.png" /></button>
+            </div>
+          </div>
+        </nav>
+        <button onclick="closeW()" id="bouton_fermer"><img src="btn_close.png" /></button>
+      </div>
     </header>
     <hr />
     <section>
