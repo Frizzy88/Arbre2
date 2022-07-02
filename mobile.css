@@ -54,6 +54,14 @@
   .normal {
     display: none;
   }
+
+  .titre_principal_normal {
+    display: none;
+  }
+  
+  .btn_normal {
+    display: none;
+  }
   
   #logo {
     display: flex;
