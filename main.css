@@ -167,6 +167,19 @@
     text-align: center;
     /*margin: 0 auto;*/
     width: 100%;
+  }  
+  
+  .ProfilPicture1 {
+    display: none;
+
+  }
+  .ProfilPicture {
+    width: 150PX;
+    height: 150PX;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 35px;
   }
 
   /* Menu debut */
