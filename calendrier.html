@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- En-tête de la page -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ma Famille </title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="arbrejs.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="calendrier.css">
+  <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' type='text/css'>-->
+
+  <!-- Scrip JS -->
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function PopupCentrer(page, largeur, hauteur, options) {
+      var top = (screen.height - hauteur) / 2;
+      var left = (screen.width - largeur) / 2;
+      window.open(page, "", "top=" + top + ",left=" + left + ",width=" + largeur + ",height=" + hauteur + "," + options);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Corps de la page -->
+  <div id="bloc_page">
+    <header>
+      <div class="normal">
+        <div id="titre_principal" class="titre_principal">
+          <div id="logo">
+            <h1>JOB LI BIDJECK</h1>
+            <a href="index.html"> <img src="JLB.png" alt="Logo de famille" /> </a>
+          </div>
+          <h2>Généalogie de la famille</h2>
+        </div>
+      </div>
+      <div class="mobile">
+        <nav>
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <a href="index.html" class="logo"> <img src="JLB.png" alt="Logo de famille" /> JOB LI BIDJECK </a>
+            <div id="myLinks">
+              <ul id="menu-accordeon">
+                <li> <a href="index.html"> Accueil </a> </li>
+                <li> <a href="accueil.html"> Présentation </a> </li>
+                <li> <a href="#"> Statistiques </a> </li>
+                <li> <a href="#"> Chronologie </a> </li>
+                <li> <a title="Individus" href="#"> Individus </a>
+                  <ul>
+                    <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
+                    <li> <a title="Statistiques" href="#"> Statistiques </a> </li>
+                    <li> <a title="Populaires" href="#"> Noms Populaires </a> </li>
+                  </ul>
+                </li>
+                <li> <a href="#"> Dates </a>
+                  <ul>
+                    <li> <a title="Evènements" href="#"> Evènements </a> </li>
+                    <li> <a title="Chronologie" href="#"> Chronologie </a> </li>
+                    <li> <a title="Anniversaires" href="#"> Anniversaires </a> </li>
+                  </ul>
+                </li>
+                <li> <a title="Recherche" href="rechercher.html"> Rechercher </a> </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <section>
+      <div id="menu">
+        <ul id="menu-accordeon">
+          <li> <a href="index.html"> Accueil </a> </li>
+          <li> <a href="accueil.html"> Présentation </a> </li>
+          <li> <a href="#"> Statistiques </a> </li>
+          <li> <a href="#"> Chronologie </a> </li>
+          <li> <a title="Individus" href="#"> Individus </a>
+            <ul>
+              <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
+              <li> <a title="Statistiques" href="#"> Statistiques </a> </li>
+              <li> <a title="Populaires" href="#"> Noms Populaires </a> </li>
+            </ul>
+          </li>
+          <li> <a href="#"> Dates </a>
+            <ul>
+              <li> <a title="Evènements" href="#"> Evènements </a> </li>
+              <li> <a title="Chronologie" href="#"> Chronologie </a> </li>
+              <li> <a title="Anniversaires" href="calendrier.html"> Anniversaires </a> </li>
+            </ul>
+          </li>
+          <li> <a title="Recherche" href="rechercher.html"> Rechercher </a> </li>
+        </ul>
+      </div>
+      <article>
+        <div class="start_article">
+          <img src="mon_arbre.jpg" alt="Arbre gene" class="ico_arbre" />
+          <h1> Calendrier des Dates </h1>
+        </div>
+
+        <div class="planner">
+          <div class="calendar">
+            <table>
+              <thead>
+                <tr>
+                  <th>Mois</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>19</th>
+                  <th>20</th>
+                  <th>21</th>
+                  <th>22</th>
+                  <th>23</th>
+                  <th>24</th>
+                  <th>25</th>
+                  <th>26</th>
+                  <th>27</th>
+                  <th>28</th>
+                  <th>29</th>
+                  <th>30</th>
+                  <th>31</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>Jan</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <span id="active">
+                      <a href="javascript:PopupCentrer('Jan4.html',650,550,'menubar=no,status=no')">1 </a>
+                    </span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <span id="active">
+                      <a href="javascript:PopupCentrer('Jan16.html',650,550,'menubar=no,status=no')">1 </a>
+                    </span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>3</span></td>
+                </tr>
+                <tr>
+                  <td><span>Fev</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>2</span></td>
+                </tr>
+                <tr>
+                  <td><span>Mar</span></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">2</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>6</span></td>
+                </tr>
+                <tr>
+                  <td><span>Avr</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">2</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>5</span></td>
+                </tr>
+                <tr>
+                  <td><span>Mai</span></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span id="active">2</span></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>7</span></td>
+                </tr>
+                <tr>
+                  <td><span>Juin</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span>6</span></td>
+                </tr>
+                <tr>
+                  <td><span>Juil</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">2</span></td>
+                  <td><span id="active">2</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>6</span></td>
+                </tr>
+                <tr>
+                  <td><span>Août</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td><span id="active">2</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>4</span></td>
+                </tr>
+                <tr>
+                  <td><span>Sept</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td><span id="active">2</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span>6</span></td>
+                </tr>
+                <tr>
+                  <td><span>Oct</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>3</span></td>
+                </tr>
+                <tr>
+                  <td><span>Nov</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>3</span></td>
+                </tr>
+                <tr>
+                  <td><span>Déc</span></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span id="active">1</span></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>2</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--<div class="schedule">
+            <ul class="tabs">
+              <li class="tab active"><a href="#">Meetings</a></li>
+              <li class="tab"><a href="#">Reminders</a></li>
+              <li class="tab"><a href="#">Notes</a></li>
+            </ul>
+
+            <div class="tab-pane">
+              <div class="schedule-list">
+
+                <div class="schedule-item">
+                  <div class="time">
+                    <span>9</span>
+                    <span>am</span>
+                  </div>
+                  <div class="description">
+                    <div class="description-header">Brainstorm on User Stories</div>
+                    <div class="description-content">
+                      <p>Lorem Ipsum dolor sit amet.</p>
+                      <ul class="contact-list">
+                        <li class="contact">
+                          <a href="#"><img src="http://gravatar.com/avatar/8b1d44e3b2310823bd41d609003b70a9?s=80"
+                              alt="" /></a>
+                        </li>
+                        <li class="contact">
+                          <a href="#"><img src="http://gravatar.com/avatar/8b1d44e3b2310823bd41d609003b70a9?s=80"
+                              alt="" /></a>
+                        </li>
+                        <li class="contact add-contact">
+                          <a href="#"><i class="icon-plus"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schedule-item free">
+                  <div class="time">
+                    <span>10</span>
+                    <span>am</span>
+                  </div>
+                  <div class="description">
+                    <div class="description-header">No Schedule</div>
+                    <div class="description-content">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </article>
+    </section>
+    <hr />
+    <footer>
+      <center>
+        Site de présentation de l'Arbre Généalogique de la famille JOB LI BIDJECK
+      </center>
+    </footer>
+  </div>
+</body>
+
+</html>

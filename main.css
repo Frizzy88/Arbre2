@@ -181,6 +181,7 @@
     display: none;
 
   }
+
   .ProfilPicture {
     width: 150PX;
     height: 150PX;
@@ -188,6 +189,14 @@
     align-items: stretch;
     justify-content: center;
     margin-top: 35px;
+  }
+
+  .ProfilPicture0 {
+    width: 150PX;
+    height: 120PX;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
   }
 
   /* Menu debut */
