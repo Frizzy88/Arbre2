@@ -249,7 +249,7 @@ const tab = {
         "JOB André Claude": {
           "JOB Annie": null,
           "JOB Yolande Nadine": {
-            "Anré Jérémie": null,
+            "André Jérémie": null,
             "William Phoenix": null
           },
           "JOB Irène Sophie": null,

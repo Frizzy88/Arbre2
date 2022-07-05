@@ -29,13 +29,16 @@
     /*background: url('images/fond_jaune.png');*/
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
+    /*padding: 0;
+    margin:0;
+    overflow: auto;*/
   }
 
   #bloc_page {
-    width: auto;
-    margin: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 80%;
+    margin: 0 auto;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
   }
 
   section h1,
@@ -284,10 +287,10 @@
   .container {
     display: grid;
     align-items: start;
-    column-gap: 20px;
+    column-gap: 5px;
     /*grid-template-columns: auto auto auto;*/
-    grid-template-columns: 300px 300px 300px;
-    padding: 10px;
+    grid-template-columns: 250px 250px 250px;
+    padding: 5px;
   }
   
   .box1 {
@@ -560,6 +563,11 @@
     width: 100%;
     color: rgb(113, 192, 120);
     /*height: 280px;*/
+  }
+
+  #tree{
+    width:100%;
+    height:100%;
   }
 
   .tree {

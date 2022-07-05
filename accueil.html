@@ -51,8 +51,8 @@
                 <li> <a href="#"> Chronologie </a> </li>
                 <li> <a title="Individus" href="#"> Individus </a>
                   <ul>-->
-                    <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
-                    <!--<li> <a title="Statistiques" href="#"> Statistiques </a> </li>
+                <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
+                <!--<li> <a title="Statistiques" href="#"> Statistiques </a> </li>
                     <li> <a title="Populaires" href="#"> Noms Populaires </a> </li>
                   </ul>
                 </li>
@@ -60,8 +60,8 @@
                   <ul>
                     <li> <a title="Evènements" href="#"> Evènements </a> </li>
                     <li> <a title="Chronologie" href="#"> Chronologie </a> </li>-->
-                    <li> <a title="Anniversaires" href="calendrier"> Anniversaires </a> </li>
-                  <!--</ul>
+                <li> <a title="Anniversaires" href="calendrier"> Anniversaires </a> </li>
+                <!--</ul>
                 </li>-->
                 <li> <a title="Recherche" href="rechercher.html"> Rechercher </a> </li>
               </ul>
@@ -83,8 +83,8 @@
           <li> <a href="#"> Chronologie </a> </li>
           <li> <a title="Individus" href="#"> Individus </a>
             <ul>-->
-              <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
-              <!--<li> <a title="Statistiques" href="#"> Statistiques </a> </li>
+          <li> <a title="Patronymes" href="patronymes.html"> Patronymes </a> </li>
+          <!--<li> <a title="Statistiques" href="#"> Statistiques </a> </li>
               <li> <a title="Populaires" href="#"> Noms Populaires </a> </li>
             </ul>
           </li>
@@ -92,8 +92,8 @@
             <ul>
               <li> <a title="Evènements" href="#"> Evènements </a> </li>
               <li> <a title="Chronologie" href="#"> Chronologie </a> </li>-->
-              <li> <a title="Anniversaires" href="calendrier.html"> Anniversaires </a> </li>
-            <!--</ul>
+          <li> <a title="Anniversaires" href="calendrier.html"> Anniversaires </a> </li>
+          <!--</ul>
           </li>-->
           <li> <a title="Recherche" href="rechercher.html"> Rechercher </a> </li>
         </ul>
@@ -116,10 +116,35 @@
           Bahida et 9 de Job, avec descendance ) ont peu à peu pris le seul patronyme de Job, écrit sans ''d''.
           Ce sont les rayons du soleil de notre emblème? </p>
 
-        <div id="famille"></div>
+        <p> Ci-dessous deux versions de l'arbre Généalogique complet (plus ou moins): </p>
 
-        <script src="arbre_globale.js"> </script>
-        <script src="arbre_complet.js"> </script>
+        <p> Première version: </p>
+
+        <!--<div id="famille"></div>
+        <script src="arbre_globale.js"> </script>-->
+
+        <div class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+          <div id="navSide" class="flex flex-col w-full md:w-48 text-gray-700 bg-white flex-shrink-0"></div>
+          <!-- * * * * * * * * * * * * * -->
+          <!-- Start of GoJS sample code -->
+          <script src="GoJs.js"></script>
+          <div id="allSampleContent" class="p-4 w-full">
+            <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+            <script id="code" src="arbre_complet.js"></script>
+
+            <div id="sample">
+              <div id="myDiagramDiv"
+                style="background-color: white; border: solid 1px black; width: 100%; height: 450px">
+              </div>
+              <p><button id="zoomToFit">Zoom pour ajuster</button> <button id="centerRoot">Centrer sur la
+                  racine</button></p>
+              <p> Ci-dessous la seconde version: </p>
+              <div id="famille"></div>
+              <script src="arbre_globale.js"> </script>
+            </div>
+            <!-- * * * * * * * * * * * * * -->
+            <!--  End of GoJS sample code  -->
+          </div>
       </article>
     </section>
     <hr />
