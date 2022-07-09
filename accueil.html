@@ -22,6 +22,24 @@
         x.style.display = "block";
       }
     }
+
+    let aggraph = document.getElementById("aggraph");
+    let graph = document.getElementById("graph");
+    /*aggraph.addEventListener("click", () => {
+      if (getComputedStyle(graph).display != "block") {
+        graph.style.display = "block";
+      } else {
+        graph.style.display = "none";
+      }
+    })*/
+    function togg() {
+      if (getComputedStyle(graph).display != "none") {
+        graph.style.display = "none";
+      } else {
+        graph.style.display = "block";
+      }
+    };
+    aggraph.onclick = togg;
   </script>
 </head>
 
@@ -116,35 +134,37 @@
           Bahida et 9 de Job, avec descendance ) ont peu à peu pris le seul patronyme de Job, écrit sans ''d''.
           Ce sont les rayons du soleil de notre emblème? </p>
 
-        <p> Ci-dessous deux versions de l'arbre Généalogique complet (plus ou moins): </p>
+        <p> Ci-dessous une version de l'arbre Généalogique complet (plus ou moins selon les informations à ma
+          disposition): </p>
 
-        <p> Première version: </p>
+        <div id="famille"></div>
+        <script src="arbre_globale.js"> </script>
 
-        <!--<div id="famille"></div>
-        <script src="arbre_globale.js"> </script>-->
+        <!--<p> Pour une version un peu plus graphique vous pouvez cliquer sur le bouton ci-dessous: </p>
+        <button id="aggraph">Version graphique !</button>
 
-        <div class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
-          <div id="navSide" class="flex flex-col w-full md:w-48 text-gray-700 bg-white flex-shrink-0"></div>
-          <!-- * * * * * * * * * * * * * -->
-          <!-- Start of GoJS sample code -->
-          <script src="GoJs.js"></script>
-          <div id="allSampleContent" class="p-4 w-full">
-            <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-            <script id="code" src="arbre_complet.js"></script>
-
-            <div id="sample">
-              <div id="myDiagramDiv"
-                style="background-color: white; border: solid 1px black; width: 100%; height: 450px">
-              </div>
-              <p><button id="zoomToFit">Zoom pour ajuster</button> <button id="centerRoot">Centrer sur la
-                  racine</button></p>
-              <p> Ci-dessous la seconde version: </p>
-              <div id="famille"></div>
-              <script src="arbre_globale.js"> </script>
-            </div>
+        <div id="graph">
+          <div class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
+            <div id="navSide" class="flex flex-col w-full md:w-48 text-gray-700 bg-white flex-shrink-0"></div>-->
             <!-- * * * * * * * * * * * * * -->
-            <!--  End of GoJS sample code  -->
+            <!-- Start of GoJS sample code -->
+            <!--<script src="GoJs.js"></script>
+            <div id="allSampleContent" class="p-4 w-full">
+              <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+              <script id="code" src="arbre_complet.js"></script>
+
+              <div id="sample">
+                <div id="myDiagramDiv"
+                  style="background-color: white; border: solid 1px black; width: 100%; height: 450px">
+                </div>
+                <p><button id="zoomToFit">Zoom pour ajuster</button> <button id="centerRoot">Centrer sur la
+                    racine</button></p>
+              </div>-->
+              <!-- * * * * * * * * * * * * * -->
+              <!--  End of GoJS sample code  -->
+            <!--</div>
           </div>
+        </div>-->
       </article>
     </section>
     <hr />

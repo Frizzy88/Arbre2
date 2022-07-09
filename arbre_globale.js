@@ -174,7 +174,7 @@ const tab = {
           },
           "JOB Henri Pierre Nicole Alfred": {
             "JOB Yohan-Hélène": null,
-            "JOB ian": null,
+            "JOB Ian": null,
             "JOB Michel yohan Jing": {
               "une fille": null,
               "un garcon": null
