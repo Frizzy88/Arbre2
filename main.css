@@ -283,6 +283,10 @@
   }
   /* Menu fin*/
 
+  #graph {
+    display: none;
+  }
+
   /* bloc patronymes debut */
   .container {
     display: grid;

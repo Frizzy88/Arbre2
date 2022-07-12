@@ -388,8 +388,8 @@ function init() {
     
     { key: 234, parent: 94, name: "JOB Njeba Alfred Lionel", gender: "M", birthYear: "1985", deathYear: "??" },
     { key: 235, parent: 94, name: "JOB Stephan", gender: "M", birthYear: "1989", deathYear: "??" },
-    { key: 236, parent: 94, name: "JOB Babi", gender: "M", birthYear: "??", deathYear: "??" },
-    { key: 237, parent: 94, name: "JOB X", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 236, parent: 94, name: "MBABI Jean Michel", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 237, parent: 94, name: "NGWAYI Bernard", gender: "M", birthYear: "??", deathYear: "??" },
 
     { key: 238, parent: 107, name: "André Jérémie", gender: "M", birthYear: "??", deathYear: "??" },
     { key: 239, parent: 107, name: "William Phoenix", gender: "M", birthYear: "??", deathYear: "??" },
@@ -448,13 +448,50 @@ function init() {
     { key: 273, parent: 234, name: "Salvador", gender: "M", birthYear: "??", deathYear: "??" },
     { key: 274, parent: 234, name: "Stephan", gender: "M", birthYear: "??", deathYear: "??" },
 
-    { key: 11, parent: 2, name: "NDJOCK", gender: "M", birthYear: "??", deathYear: "??" },
-    { key: 12, parent: 2, name: "BIDJECK", gender: "M", birthYear: "??", deathYear: "??" },
-    { key: 11, parent: 2, name: "NDJOCK", gender: "M", birthYear: "??", deathYear: "??" },
-    { key: 12, parent: 2, name: "BIDJECK", gender: "M", birthYear: "??", deathYear: "??" },
-
-
+    { key: 275, parent: 38, name: "MBAGA André Claude", gender: "M", birthYear: "??", deathYear: "??" },
     
+    { key: 276, parent: 275, name: "JOB MBAGA Marie Blanche", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 277, parent: 275, name: "GWETH MBAGA Yoan Joseph", gender: "M", birthYear: "??", deathYear: "??" },
+    
+    { key: 278, parent: 222, name: "TARDIEU BAEZA Alexandre Vincent Nicolas", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 279, parent: 222, name: "TARDIEU BAEZA Luc-André Dominique", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 280, parent: 222, name: "TARDIEU BAEZA Biley Loalwa Scarlet-Angel", gender: "F", birthYear: "??", deathYear: "??" },
+    
+    { key: 281, parent: 225, name: "ELOUNDOU Elena Solange Crescence", gender: "F", birthYear: "2019", deathYear: "??" },
+    
+    { key: 282, parent: 224, name: "IMOMA James", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 283, parent: 224, name: "IMOMA Jason", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 284, parent: 224, name: "IMOMA Cloé", gender: "F", birthYear: "??", deathYear: "??" },
+    
+    { key: 285, parent: 203, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 286, parent: 203, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+
+    { key: 287, parent: 204, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 288, parent: 204, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    
+    { key: 289, parent: 209, name: "JOB Erwan", gender: "M", birthYear: "1996", deathYear: "??" },
+    { key: 290, parent: 209, name: "JOB Guewin", gender: "M", birthYear: "1998", deathYear: "??" },
+    
+    { key: 291, parent: 214, name: "JOB Louis Ebwadu", gender: "M", birthYear: "2018", deathYear: "??" },
+    
+    { key: 292, parent: 216, name: "YAMSI JOB Gabe-Denzel Manaël", gender: "M", birthYear: "2021", deathYear: "??" },
+    
+    { key: 293, parent: 112, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 294, parent: 112, name: "Un Garçon ??", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 295, parent: 112, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 296, parent: 112, name: "Un Garçon ??", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 297, parent: 112, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 298, parent: 112, name: "Un Garçon ??", gender: "M", birthYear: "??", deathYear: "??" },
+
+    { key: 299, parent: 133, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
+    
+    { key: 300, parent: 33, name: "JOB Marie Hélène", gender: "F", birthYear: "1997", deathYear: "??" },
+
+    { key: 301, parent: 300, name: "JOB BEKOK Sangal Mankay", gender: "M", birthYear: "2004", deathYear: "??" },
+    { key: 302, parent: 300, name: "MASSE MA MOUAHA II Fils", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 303, parent: 300, name: "NGO SANDA Faith Maria Bénédicta", gender: "F", birthYear: "??", deathYear: "??" },
+    { key: 304, parent: 300, name: "MASOADA MA NWAHA", gender: "M", birthYear: "??", deathYear: "??" },
+
   ];
 
   // create the model for the family tree

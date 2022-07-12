@@ -23,23 +23,14 @@
       }
     }
 
-    let aggraph = document.getElementById("aggraph");
-    let graph = document.getElementById("graph");
-    /*aggraph.addEventListener("click", () => {
-      if (getComputedStyle(graph).display != "block") {
-        graph.style.display = "block";
+    function maFonction() {
+      var div = document.getElementById("graph");
+      if (div.style.display === "none") {
+        div.style.display = "block";
       } else {
-        graph.style.display = "none";
+        div.style.display = "none";
       }
-    })*/
-    function togg() {
-      if (getComputedStyle(graph).display != "none") {
-        graph.style.display = "none";
-      } else {
-        graph.style.display = "block";
-      }
-    };
-    aggraph.onclick = togg;
+    }
   </script>
 </head>
 
@@ -140,15 +131,18 @@
         <div id="famille"></div>
         <script src="arbre_globale.js"> </script>
 
-        <!--<p> Pour une version un peu plus graphique vous pouvez cliquer sur le bouton ci-dessous: </p>
-        <button id="aggraph">Version graphique !</button>
+        <p> Pour une version un peu plus graphique vous pouvez cliquer sur le bouton ci-dessous: </p>
+        <!--<button id="aggraph">Version graphique !</button>-->
+        <button onclick="maFonction()">Version graphique !</button>
+
+        <p> </p>
 
         <div id="graph">
           <div class="md:flex flex-col md:flex-row md:min-h-screen w-full max-w-screen-xl mx-auto">
-            <div id="navSide" class="flex flex-col w-full md:w-48 text-gray-700 bg-white flex-shrink-0"></div>-->
+            <div id="navSide" class="flex flex-col w-full md:w-48 text-gray-700 bg-white flex-shrink-0"></div>
             <!-- * * * * * * * * * * * * * -->
             <!-- Start of GoJS sample code -->
-            <!--<script src="GoJs.js"></script>
+            <script src="GoJs.js"></script>
             <div id="allSampleContent" class="p-4 w-full">
               <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
               <script id="code" src="arbre_complet.js"></script>
@@ -159,12 +153,12 @@
                 </div>
                 <p><button id="zoomToFit">Zoom pour ajuster</button> <button id="centerRoot">Centrer sur la
                     racine</button></p>
-              </div>-->
+              </div>
               <!-- * * * * * * * * * * * * * -->
               <!--  End of GoJS sample code  -->
-            <!--</div>
+            </div>
           </div>
-        </div>-->
+        </div>
       </article>
     </section>
     <hr />
