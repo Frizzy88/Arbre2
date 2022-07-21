@@ -7,7 +7,7 @@ const options = {
 };
 
 document.getElementById("heading").innerHTML = today.toLocaleDateString(
-  "en-US",
+  "fr-FR",
   options
 );
 
@@ -301,10 +301,17 @@ const data = [
   },
   {
     id: 47,
-    name: "Larry Little",
+    name: "Exemple: Larry Little",
     date: currentMonthAndDate + "/1996", // changing date and month to current date to show initial content
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+  },
+  {
+    id: 48,
+    name: "Exemple: Hester Hogan",
+    date: currentMonthAndDate + "/1997", // changing date and month to current date to show initial content
+    image:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg",
   },
   
   /*
@@ -334,7 +341,7 @@ todayData = data.filter((person, index) => {
 /// DISPLAY ////
 
 var noOfBirthdays = document.getElementById("noOfBirthdays");
-noOfBirthdays.innerHTML = todayData.length + " birthdays today";
+noOfBirthdays.innerHTML = "Nous avons, " + todayData.length + " anniversaires aujourd'hui";
 
 var people = document.getElementById("people");
 

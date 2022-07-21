@@ -566,20 +566,6 @@
 
   /* Rechercher fin*/
 
-  .containerReminder {
-    width: 70vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0px 10px 12px;
-    max-width: 270px;
-    background: #fff;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 40%);
-    flex-direction: column;
-  }
-
   /*arbre généalogique début*/
   .contour {
     text-align: center;

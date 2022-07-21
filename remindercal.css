@@ -91,25 +91,43 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-*/
+
 @media screen and (min-width: 575px) {
   .containerReminder {
     width: 70vw;
   }
-}
+}*/
 
 #heading {
   color: #33b002;
   text-align: center;
+  font-size: 14px;  
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.containerReminderHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: auto; /*90vw;*/
+  margin: 5px auto;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  height: 0;
 }
 
 .containerReminder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /*width: 90vw;*/
-  margin: 15px 0 10px 96px;
+  align-items: center;  
+  width: auto; /*90vw;*/
+  margin: 5px auto;
   max-width: 450px;
   background: #fff;
   border-radius: 0.25rem;
@@ -117,10 +135,13 @@ p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.container h3 {
+.containerReminderHeader h3 {
   font-weight: normal;
   text-transform: none;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
+  margin-bottom: 0rem;
+  margin-top: 2px;
+  font-size: 12px;
 }
 
 .person {
@@ -140,14 +161,17 @@ p {
 }
 
 .person h4 {
-  margin-bottom: 0.35rem;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .person p {
   margin-bottom: 0;
+  margin-top: 5px;
 }
 
-.container button {
+.containerReminder button {
   color: #fff;
   display: block;
   width: 100%;
@@ -163,6 +187,6 @@ p {
   cursor: pointer;
 }
 
-.container button:hover {
+.containerReminder button:hover {
   background: hsl(211, 21%, 55%);
 }
