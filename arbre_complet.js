@@ -469,8 +469,8 @@ function init() {
     { key: 287, parent: 204, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
     { key: 288, parent: 204, name: "Une Fille ??", gender: "F", birthYear: "??", deathYear: "??" },
     
-    { key: 289, parent: 209, name: "JOB Erwan", gender: "M", birthYear: "1996", deathYear: "??" },
-    { key: 290, parent: 209, name: "JOB Guewin", gender: "M", birthYear: "1998", deathYear: "??" },
+    { key: 289, parent: 209, name: "Un Garçon", gender: "M", birthYear: "??", deathYear: "??" },
+    { key: 290, parent: 209, name: "Un Garçon", gender: "M", birthYear: "??", deathYear: "??" },
     
     { key: 291, parent: 214, name: "JOB Louis Ebwadu", gender: "M", birthYear: "2018", deathYear: "??" },
     
